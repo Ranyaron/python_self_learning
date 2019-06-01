@@ -20,5 +20,3 @@ while True:
                 c += b
 
 print(c)
-
-# bla bla
