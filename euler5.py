@@ -2,22 +2,19 @@
 
 Какое самое маленькое число делится нацело на все числа от 1 до 20?'''
 
-s = 1
-while True:
-    for i in range(2519, 2521):
+s = 20
+x = 0
+for i in range(20, 9999999999):
+    if i - 1 == x:
+        break
+    while True:
         if i % s == 0:
-            s += 1
-            if i % s == 0:
-                s += 1
+            s -= 1
+            if s < 2:
+                x = i
+                break
+        else:
+            s = 20
+            break
 
 print(x)
-
-
-
-
-
-    #     s += 1
-    #     if s >= 999:
-    #         break
-    #
-    # print(x)
